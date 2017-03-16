@@ -1,10 +1,9 @@
 const AppComponent = {
     template: `
     <header></header>
-    <nav></nav>
-    <div>
+    <md-content>
         <div ui-view></div>
-    </div>
+    </md-content>
     <footer></footer>
   `
 };

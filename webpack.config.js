@@ -12,8 +12,16 @@ module.exports = {
                 loader: 'babel', // 'babel-loader' is also a legal name to reference
                 query: {
                     presets: ['es2015'],
-                    cacheDirectory: true
+                    cacheDirectory: false
                 }
+            },
+            { test: /\.css$/, loader: "style-loader!css-loader" },
+            {
+              test: /\.(jpg|png|svg)$/,
+              loader: 'url-loader',
+              options: {
+                limit: 25000,
+              },
             }
         ]
     },

@@ -1,0 +1,10 @@
+.list-uncle{
+	list-style: none;
+	cursor: move;
+	padding-left: 0px;
+	display: flex;
+}
+.button {
+	cursor: not-allowed;
+    pointer-events: none;
+}
