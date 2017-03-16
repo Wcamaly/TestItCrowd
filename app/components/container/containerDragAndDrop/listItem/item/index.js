@@ -3,7 +3,7 @@ import itemComponent from './item.component';
 
 
 const item = angular
-  .module('app.component.category.listItem.item', [
+  .module('app.component.containerDragAndDrop.listItem.item', [
     
   ])
   .component('item', itemComponent)

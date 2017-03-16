@@ -1,3 +1,39 @@
+/*	Struct to Model is 
+	-->
+		dropzones: {		
+				title : 'Title to sector Drag and Drop is posible',
+				list : [
+					{
+				      "type": "category",
+				      "id": 1,
+				      "title":"Box 1",
+				      "columns": [
+				            {
+					            "type": "item",
+					            "description":"nuevo",
+					            "title":"item",
+					            "id": "1000"
+					          },
+					          {
+					            "type": "item",
+					            "description":"nuevo",
+					            "title":"item",
+					            "id": "1"
+					          }
+			      		]
+			    	},
+				    {
+				      "type": "item",
+				      "description":"description Box2",
+				      "title":"Box 2",
+				      "id": "6"
+				    }
+			  ]
+			}
+	}
+*/
+
+
 class containerController {
 	// Constructor
 	constructor(containerService, $scope){
@@ -17,19 +53,24 @@ class containerController {
 	$onInit() {
 		// Structur Model 
 		this.scope.models={
-			selected : null,
-			templates:[
+			"selected" : null,
+			"templates":[
 				{
 		            "type": "item",
 		            "description":"nuevo",
 		            "title":"item",
-		            "id": "2"
+		            "id": 2
 			    },
-           		{type: "category", id: 1, columns: [[], []]}
+           		{
+           			"type": "category", 
+           			"id": 1,
+           			"title":"New Section",
+           			"columns": []
+           		}
 			],
-			dropzones:{
-				title : 'Section A',
-				list : []
+			"dropzones":{
+				"title" : 'Section A',
+				"list" : []
 			}
 		}
 
@@ -47,40 +88,7 @@ class containerController {
 			if(this.scope.models.dropzones.list.length > 0)
 				this.containerService.changes(this.scope.models.dropzones.list);
 		} ,true);
-		/*{	dropzones: {		
-			  "SecctionA": [
-			    {
-			      "type": "category",
-			      "id": 1,
-			      "title":"Box 1",
-			      "columns": [
-			        [
-			          {
-			            "type": "item",
-			            "description":"nuevo",
-			            "title":"item",
-			            "id": "1000"
-			          },
-			          {
-			            "type": "item",
-			            "description":"nuevo",
-			            "title":"item",
-			            "id": "1"
-			          }
-			        ],
-			      ]
-			    },
-			    {
-			      "type": "item",
-			      "description":"description Box2",
-			      "title":"Box 2",
-			      "id": "6"
-			    }
-			  ]
-			}
-
-
-		}*/
+		
 	}
 
 

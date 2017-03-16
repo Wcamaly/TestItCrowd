@@ -9,7 +9,7 @@ const itemComponent ={
   },
 	controller: itemController,
   template : `
-	 <md-card >
+	    <md-card >
         <md-card-title>
           <md-card-title-text>
             <span class="md-headline">{{$ctrl.card.title}}</span>

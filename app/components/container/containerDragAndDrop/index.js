@@ -7,9 +7,10 @@ import containerDragAndDropComponent from './containerDragAndDrop.component';
 import listItem from './listItem'
 
 
+
 // Defination and configuration Components
 const containerDragAndDrop = angular
-  .module('app.component.containerDragAndDropComponent', [
+  .module('app.component.containerDragAndDrop', [
     listItem
   ])
   .component('containerDragAndDrop', containerDragAndDropComponent)

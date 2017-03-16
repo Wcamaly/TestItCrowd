@@ -3,4 +3,16 @@
     width: 100%;
     padding: 0px;
     min-height: 50px;
+    display: block;
+}
+.list-card li{
+	float: left;
+	width: 50%;
+	cursor: move;
+}
+.bak-color{
+	background: #c1c1c1;
+}
+.category .bak-color{
+	background: #fff;
 }

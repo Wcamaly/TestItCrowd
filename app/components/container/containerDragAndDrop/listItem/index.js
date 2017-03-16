@@ -5,10 +5,11 @@ import listItemComponent from './listItem.component';
 
 // Imports aditional Directives
 import item from './item';
-import category from '../category/category'
+import category from './category';
+
 // Defination and configuration Components
 const listItem = angular
-  .module('app.component.category.listItem', [
+  .module('app.component.containerDragAndDrop.listItem', [
     item,
     category
   ])

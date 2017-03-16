@@ -8,7 +8,7 @@ const containerDragAndDropComponent = {
 	},
 	controller: containerDragAndDropController,
 	template : `
-		<md-content layout="column" layout-aling="" class="margin-top" >
+		<md-content layout="column" layout-aling="" class="margin-top bak-color" >
 			<md-toolbar class="md-default">
 			    <div class="md-toolbar-tools">
 			      <h2 class="md-flex">{{$ctrl.models.dropzones.title}}</h2>

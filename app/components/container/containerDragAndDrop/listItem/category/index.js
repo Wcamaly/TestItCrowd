@@ -3,13 +3,12 @@ import categoryComponent from './category.component';
 
 
 // Imports aditional Directives
-import listItem from '../listItem/listItem';
+
 
 
 // Defination and configuration Components
 const category = angular
-  .module('app.component.containerDragAndDropComponent.category', [
-    listItem
+  .module('app.component.containerDragAndDrop.category', [
 
   ])
   .component('category', categoryComponent)
